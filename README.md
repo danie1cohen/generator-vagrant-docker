@@ -1,5 +1,5 @@
 # generator-vagrant-docker [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
-> Creates a vagrant environment bootstrapped with docker. Useful for developing for docker apps in a windows environment.
+> Creates a vagrant environment bootstrapped with docker. This is useful for developing docker apps while chained to a windows environment that you wouldn't be using for deployment, and that isn't capable of natively provisioning the vagrant environment using docker. Instead we use a shell script to bootstrap the vagrant environment with docker and then you can develop from there.
 
 ## Installation
 
