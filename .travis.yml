@@ -7,6 +7,6 @@ before_script:
   - sudo apt-get install -y vagrant
 script:
   - npm test
-  - npm link danie1cohen/generator-vagrant-docker
+  - sudo npm link danie1cohen/generator-vagrant-docker
   - mkdir demo && cd demo && yes | yo vagrant-docker && vagrant up
 after_script: 'cat ./coverage/lcov.info | coveralls'
