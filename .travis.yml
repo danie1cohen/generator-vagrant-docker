@@ -1,7 +1,7 @@
 language: node_js
 node_js:
   - 7
-  - 6
+  #- 6
   #- 4
 before_script:
   - sudo apt-get install -y vagrant npm
@@ -9,5 +9,5 @@ before_script:
 script:
   - npm test
   - sudo npm link /home/travis/build/danie1cohen/generator-vagrant-docker
-  - mkdir demo && cd demo && yes '' | yo vagrant-docker && vagrant up
+  #- mkdir demo && cd demo && yes '' | yo vagrant-docker && vagrant up
 after_script: 'cat ./coverage/lcov.info | coveralls'
